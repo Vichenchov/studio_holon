@@ -1,0 +1,19 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "components/button";
+@import "components/mainTitle";
+@import "components/shape1";
+@import "components/hero";
+@import "components/svgs";
+@import "components/mainNavigation";
+@import "components/logo";
+@import "components/SmallScreenNavigation";
+
+@import "layout/layout";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";

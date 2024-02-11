@@ -1,0 +1,61 @@
+// _media-queries.scss
+
+@media (max-width: 1400px) {
+  .heading-primary {
+    &--main {
+      font-size: 5rem;
+    }
+  }
+  .svg-pencils {
+    height: 44rem;
+  }
+  .svg-v1_o {
+    height: 49rem;
+  }
+  .svg-pencils,
+  .svg-v1_o {
+    margin-top: 13rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-container {
+    ul {
+      .navigation_a {
+        &:link,
+        &:visited {
+          margin: 1rem 0 0 8rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    flex: 1;
+    width: 100%;
+  }
+  .logo {
+    top: -3.5rem;
+    left: -1rem;
+  }
+  .svg-pencils,
+  .svg-v1_o {
+    margin-top: 0;
+    min-width: 27rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .svg-pencils {
+    left: 0;
+  }
+  .hero_svgs {
+    width: 100%;
+  }
+}
