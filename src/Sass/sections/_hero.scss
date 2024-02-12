@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: row-reverse;
-  // height: 95vh;
+  padding: $section-padding;
 }
 
 header {
@@ -17,21 +17,19 @@ header {
 }
 
 .heading-primary {
-  margin-top: 8rem;
+  margin-top: 12.5rem;
 
   &--main {
     display: block;
-    font-size: 6rem;
+    font-size: $mainTitle-fontSize;
     font-weight: 700;
-    letter-spacing: 0.1rem;
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
   }
 
   &--sub {
     display: inline-block;
-    font-size: 2rem;
+    font-size: $subText-fontSize;
     font-weight: 400;
-    letter-spacing: 0.5rem;
     max-width: 60rem;
     line-height: 3rem;
   }
@@ -61,12 +59,3 @@ header {
   animation: slideFromLeft 2s ease-in-out forwards;
 }
 
-.svg-v2_g {
-  position: absolute;
-  height: 55rem;
-  width: auto;
-  top: 60rem;
-  right: -20rem;
-  z-index: -1;
-  animation: slideFromRight 2s ease-in-out forwards;
-}

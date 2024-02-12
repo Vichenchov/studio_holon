@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+
 import SmallScreenNavigation from "./SmallScreenNavigation";
+import logo from "../Resources/logo.png";
 
 const MainNavigation = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(
@@ -18,30 +20,51 @@ const MainNavigation = () => {
     };
   }, []);
 
+  const handleAnchorClick = (event, sectionId) => {
+    event.preventDefault();
+
+    const targetSection = document.getElementById(sectionId);
+
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       {!isSmallScreen ? (
         <div className="nav-container">
           <ul>
             <li>
-              <a href="#" className="navigation_a">
-                קצת עלינו
+              <a
+                href="#lessons"
+                onClick={(e) => handleAnchorClick(e, "lessons")}
+                className="navigation_a"
+              >
+                השיעורים שלנו
               </a>
             </li>
             <li>
-              <a href="#" className="navigation_a">
-                על המורה
+              <a
+                href="teacher"
+                onClick={(e) => handleAnchorClick(e, "teacher")}
+                className="navigation_a"
+              >
+                המורה שלנו
               </a>
             </li>
             <li>
-              <a href="#" className="navigation_a">
+              <a href="technical_stuff" className="navigation_a">
                 פרטי השיעורים
               </a>
             </li>
             <li>
-              <a href="#" className="navigation_a">
+              <a href="contact" className="navigation_a">
                 צור קשר
               </a>
+            </li>
+            <li>
+              <img className="logo" src={logo} alt="logo" />
             </li>
           </ul>
         </div>

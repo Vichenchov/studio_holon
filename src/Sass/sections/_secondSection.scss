@@ -1,0 +1,59 @@
+.secondSec_container {
+  position: relative;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row-reverse;
+  height: $sectionHight;
+  text-align: right;
+  align-items: flex-start;
+  padding: $section-padding;
+
+  &--text {
+    width: 40%;
+
+    &--1 {
+      padding: 8rem 0 6rem;
+    }
+
+    h2 {
+      font-size: $subTitle-fontSize;
+      font-weight: $mainTitle-fontWeight;
+      margin: 3rem 0 3rem;
+    }
+
+    label {
+      font-size: $subText-fontSize;
+      font-weight: $subText-fontWeight;
+    }
+  }
+
+  &--img {
+    position: relative;
+    text-align: center;
+    width: 60%;
+    animation: slideImages 2s ease-in-out forwards;
+
+    img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: block;
+      height: 72rem;
+    }
+  }
+}
+
+.tall_drawing {
+  animation: slideFromRight 2s ease-in-out forwards;
+}
+
+.svg-v2_g {
+  position: absolute;
+  height: 100%;
+  display: block;
+  height: 50rem;
+  width: auto;
+  bottom: 65rem;
+  z-index: -1;
+  animation: slideFromLeft 2s ease-in-out forwards;
+}

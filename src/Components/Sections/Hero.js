@@ -1,6 +1,5 @@
 import Svg1 from "../../Resources/pencils.svg";
 import v1_g from "../../Resources/Vector1-orange.svg";
-import v2_g from "../../Resources/Vector2-green.svg";
 
 const Hero = () => {
   return (
@@ -23,7 +22,6 @@ const Hero = () => {
         <img className="svg-v1_o" src={v1_g} alt="SVG Image" />
         <img className="svg-pencils" src={Svg1} alt="SVG Image" />
       </div>
-      {/* <img className="svg-v2_g" src={v2_g} alt="SVG Image" /> */}
     </div>
   );
 };

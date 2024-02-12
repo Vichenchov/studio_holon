@@ -1,7 +1,20 @@
+import logo from "../Resources/logo.png";
+
 const SmallScreenNavigation = () => {
+  const handleAnchorClick = (event, sectionId) => {
+    event.preventDefault();
+
+    const targetSection = document.getElementById(sectionId);
+
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <nav role="navigation">
+        <img className="logo" src={logo} alt="logo" />
         <div id="menuToggle">
           <input type="checkbox" />
 
@@ -10,11 +23,11 @@ const SmallScreenNavigation = () => {
           <span></span>
 
           <ul id="menu">
-            <a href="#">
-              <li>קצת עלינו</li>
+            <a href="#lessons" onClick={(e) => handleAnchorClick(e, "lessons")}>
+              <li>השיעורים שלנו</li>
             </a>
-            <a href="#">
-              <li>על המורה</li>
+            <a href="teacher" onClick={(e) => handleAnchorClick(e, "teacher")}>
+              <li>המורה שלנו</li>
             </a>
             <a href="#">
               <li>פרטי השיעורים</li>

@@ -1,17 +1,19 @@
 import "./Sass/index.scss";
 
 import Hero from "./Components/Sections/Hero";
-import Layout from "./Components/layout";
 
-import Icon from "./Resources/logo.png";
+import SecondSection from "./Components/Sections/secondSection";
+import TechnicalInfo from "./Components/Sections/technicalInfo";
+import MainNavigation from "./Components/MainNavigation";
 
 function App() {
   return (
-    <Layout>
-      <img className="logo" src={Icon} alt="Icon" />
-
+    <>
+      <MainNavigation />
       <Hero />
-    </Layout>
+      <SecondSection />
+      <TechnicalInfo />
+    </>
   );
 }
 
