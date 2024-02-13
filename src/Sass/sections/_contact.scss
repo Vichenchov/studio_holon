@@ -1,0 +1,58 @@
+.contact {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  padding: $section-padding;
+  //   height: 40vh;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: $color-primary-clear;
+
+  h2 {
+    text-align: right;
+    font-size: $subTitle-fontSize;
+    margin-bottom: 3rem;
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    p {
+      display: inline-block;
+      font-size: calc($subText-fontSize * 1.3);
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  &_phone,
+  &_whatsapp {
+    width: 50%;
+  }
+}
+
+.contact_btn:link,
+.contact_btn:visited {
+  position: relative;
+  margin-top: 0;
+  padding: 2rem 2rem 2rem 7rem;
+  background-color: #25d366;
+}
+
+.contact_btn:hover {
+  color: #fff;
+}
+
+.contact_whatsapp box-icon {
+  position: absolute;
+  left: 3rem;
+  top: 1.7rem;
+}
+
+.italic {
+  font-style: italic;
+}

@@ -36,27 +36,37 @@
     margin-left: 4rem;
     margin-bottom: 4rem;
     width: 30%;
-    // background-color: $color-primary-clear;
+    background-color: $color-secondery-clear;
     z-index: -1;
     border-radius: 25px;
+
     box-shadow: 0 0.5rem 1rem rgba($color-primary-clear, 0.4);
 
     h3 {
       font-size: 3rem;
-      font-weight: $subText-fontWeight;
+      font-weight: calc($subText-fontWeight * 1.5);
       margin: 1.5rem 0 1.5rem;
     }
 
-    label {
+    p {
       font-size: $subText-fontSize;
-    }
-
-    &:hover {
-      // background-color: aqua;
     }
   }
 }
 
-.info_container--1:hover {
-  box-shadow: 0 0.5rem 1rem rgba($color-secondery-clear, 0.4);
+.info_container box-icon {
+  height: 4rem;
+  width: 4rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 25px;
+}
+
+.decorated-text {
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration-thickness: 6px;
+  text-decoration-color: $color-primary-clear;
+  text-decoration-skip-ink: none;
 }

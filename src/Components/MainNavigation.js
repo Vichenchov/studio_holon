@@ -54,7 +54,11 @@ const MainNavigation = () => {
               </a>
             </li>
             <li>
-              <a href="technical_stuff" className="navigation_a">
+              <a
+                href="technical_stuff"
+                onClick={(e) => handleAnchorClick(e, "technical_stuff")}
+                className="navigation_a"
+              >
                 פרטי השיעורים
               </a>
             </li>

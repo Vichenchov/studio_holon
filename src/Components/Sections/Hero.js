@@ -14,7 +14,7 @@ const Hero = () => {
             את עצמם דרך האמנות
           </span>
         </h1>
-        <a href="#" className="btn">
+        <a href="#contact" className="btn">
           להשארת פרטים
         </a>
       </header>

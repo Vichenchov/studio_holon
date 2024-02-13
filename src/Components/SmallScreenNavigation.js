@@ -26,10 +26,13 @@ const SmallScreenNavigation = () => {
             <a href="#lessons" onClick={(e) => handleAnchorClick(e, "lessons")}>
               <li>השיעורים שלנו</li>
             </a>
-            <a href="teacher" onClick={(e) => handleAnchorClick(e, "teacher")}>
+            <a href="#teacher" onClick={(e) => handleAnchorClick(e, "teacher")}>
               <li>המורה שלנו</li>
             </a>
-            <a href="#">
+            <a
+              href="#technical_stuff"
+              onClick={(e) => handleAnchorClick(e, "technical_stuff")}
+            >
               <li>פרטי השיעורים</li>
             </a>
             <a href="#">

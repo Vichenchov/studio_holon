@@ -1,0 +1,570 @@
+.btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.25rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 25px;
+  color: black;
+  background-color: #ff6f58;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  margin-top: 5rem;
+}
+.btn:hover {
+  background-color: #03989e;
+}
+.btn:active {
+  transform: translateY(2px);
+}
+
+.maincolor {
+  color: #ff6f58;
+}
+
+.nav-container ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  align-items: center;
+  padding: 7rem 5rem 3rem;
+}
+.nav-container ul .navigation_a:link, .nav-container ul .navigation_a:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+  margin: 1rem 0 0 16rem;
+  text-align: right;
+  color: gray;
+}
+.nav-container ul .navigation_a:link:hover, .nav-container ul .navigation_a:visited:hover {
+  color: #ff6f58;
+}
+
+.logo {
+  position: absolute;
+  width: 18rem;
+  height: auto;
+  top: -1.5rem;
+  left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #03989e;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: tomato;
+}
+
+#menuToggle {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background-color: #03989e;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ff6f58;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding-top: 125px;
+  padding: 12.5rem 8rem 3rem 0;
+  right: -100px;
+  text-align: right;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
+  opacity: 1;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+}
+.layout {
+  padding: 7.5rem;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 5rem 0;
+}
+
+header {
+  text-align: right;
+  width: 40%;
+}
+
+.hero_svgs {
+  width: 60%;
+  position: relative;
+  animation: slideImages 2s ease-in-out forwards;
+}
+
+.heading-primary {
+  margin-top: 12.5rem;
+}
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 10rem;
+}
+.heading-primary--sub {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 400;
+  max-width: 60rem;
+  line-height: 3rem;
+}
+
+.svg-pencils,
+.svg-v1_o {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-top: 5rem;
+}
+
+.svg-pencils {
+  position: absolute;
+  height: 58.5rem;
+  top: 10rem;
+  left: 8rem;
+  z-index: 1;
+  animation: slideFromRight 2s ease-in-out forwards;
+}
+
+.svg-v1_o {
+  top: 0;
+  left: 0;
+  height: 64.8rem;
+  animation: slideFromLeft 2s ease-in-out forwards;
+}
+
+.secondSec_container {
+  position: relative;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 95vh;
+  text-align: right;
+  align-items: flex-start;
+  padding: 0 5rem 0;
+}
+.secondSec_container--text {
+  width: 40%;
+}
+.secondSec_container--text--1 {
+  padding: 8rem 0 6rem;
+}
+.secondSec_container--text h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 3rem 0 3rem;
+}
+.secondSec_container--text p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.secondSec_container--img {
+  position: relative;
+  text-align: center;
+  width: 60%;
+  animation: slideImages 2s ease-in-out forwards;
+}
+.secondSec_container--img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  height: 72rem;
+}
+
+.tall_drawing {
+  animation: slideFromRight 2s ease-in-out forwards;
+}
+
+.svg-v2_g {
+  position: absolute;
+  height: 100%;
+  display: block;
+  height: 50rem;
+  width: auto;
+  bottom: 65rem;
+  z-index: -1;
+  animation: slideFromLeft 2s ease-in-out forwards;
+}
+
+.info_main_container {
+  margin-top: 10rem;
+  padding: 5rem 1rem;
+}
+
+.info_title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+  text-align: right;
+  margin-right: 4rem;
+}
+
+.info_container {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  text-align: right;
+  margin-right: 4rem;
+}
+.info_container--1, .info_container--2, .info_container--3 {
+  position: relative;
+  padding: 3rem;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+  width: 30%;
+  background-color: rgba(3, 153, 158, 0.6156862745);
+  z-index: -1;
+  border-radius: 25px;
+  box-shadow: 0 0.5rem 1rem rgba(255, 110, 88, 0.4);
+}
+.info_container--1 h3, .info_container--2 h3, .info_container--3 h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1.5rem;
+}
+.info_container--1 p, .info_container--2 p, .info_container--3 p {
+  font-size: 2rem;
+}
+
+.info_container box-icon {
+  height: 4rem;
+  width: 4rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 25px;
+}
+
+.decorated-text {
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration-thickness: 6px;
+  text-decoration-color: #ff6e58;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+
+.contact {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem 0;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: #ff6e58;
+}
+.contact h2 {
+  text-align: right;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.contact_info {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact_info p {
+  display: inline-block;
+  font-size: 2.6rem;
+  margin-left: 1.5rem;
+  font-weight: bold;
+}
+.contact_phone, .contact_whatsapp {
+  width: 50%;
+}
+
+.contact_btn:link,
+.contact_btn:visited {
+  position: relative;
+  margin-top: 0;
+  padding: 2rem 2rem 2rem 7rem;
+  background-color: #25d366;
+}
+
+.contact_btn:hover {
+  color: #fff;
+}
+
+.contact_whatsapp box-icon {
+  position: absolute;
+  left: 3rem;
+  top: 1.7rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.footer {
+  height: 10rem;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* defulat font-size is 16px
+  we want 10px but in % 
+  10/16 = 0.625 == 62.5% 
+  This defines what 1rem is */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arimo, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+p {
+  line-height: 3rem;
+}
+
+h1,
+h2,
+span,
+p {
+  letter-spacing: 0.4rem;
+}
+
+@media (max-width: 1400px) {
+  .heading-primary--main {
+    font-size: 5rem;
+  }
+  .svg-pencils {
+    height: 44rem;
+  }
+  .svg-v1_o {
+    height: 49rem;
+  }
+  .svg-pencils,
+  .svg-v1_o {
+    margin-top: 13rem;
+  }
+  .tall_drawing {
+    margin-top: 8rem;
+  }
+}
+@media (max-width: 1200px) {
+  .nav-container ul .navigation_a:link, .nav-container ul .navigation_a:visited {
+    margin: 1rem 0 0 8rem;
+  }
+}
+@media (max-width: 1025px) {
+  .info_main_container {
+    justify-content: center;
+    margin-top: 30rem;
+  }
+  .info_title {
+    text-align: center;
+    margin-right: 0;
+  }
+  .hero,
+  .secondSec_container,
+  .info_container,
+  .contact_info {
+    flex-direction: column;
+  }
+  header,
+  .secondSec_container--text,
+  .secondSec_container--img {
+    flex: 1;
+    width: 100%;
+  }
+  .info_container {
+    margin-right: 0;
+    align-items: center;
+  }
+  .info_container--1, .info_container--2, .info_container--3 {
+    width: 80%;
+  }
+  .svg-pencils,
+  .svg-v1_o {
+    margin-top: 0;
+    min-width: 27rem;
+  }
+  .tall_drawing {
+    margin-top: 0;
+  }
+  .secondSec_container--img img {
+    margin-top: 5rem;
+    height: 55rem;
+  }
+  .contact_phone, .contact_whatsapp {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contact_phone p, .contact_whatsapp p {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 769px) {
+  .logo {
+    top: -3rem;
+  }
+  .svg-pencils {
+    left: 0;
+  }
+  .hero_svgs {
+    width: 100%;
+  }
+  .secondSec_container--img img {
+    height: 65rem;
+  }
+  .info_main_container {
+    margin-top: 70rem;
+  }
+  .contact p:first-child {
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .info_main_container {
+    margin-top: 105rem;
+  }
+}/*# sourceMappingURL=index.css.map */
