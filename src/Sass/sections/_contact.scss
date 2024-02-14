@@ -3,9 +3,8 @@
   display: flex;
   flex-direction: column;
   padding: $section-padding;
-  //   height: 40vh;
   padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-bottom: 9rem;
   background-color: $color-primary-clear;
 
   h2 {
@@ -16,7 +15,7 @@
 
   &_info {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
@@ -31,6 +30,10 @@
 
   &_phone,
   &_whatsapp {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
     width: 50%;
   }
 }

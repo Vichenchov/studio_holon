@@ -2,7 +2,7 @@
   position: relative;
   margin-top: 10rem;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   height: $sectionHight;
   text-align: right;
   align-items: flex-start;
@@ -32,7 +32,8 @@
     text-align: center;
     width: 60%;
     animation: slideImages 2s ease-in-out forwards;
-
+    overflow: hidden;
+    
     img {
       position: relative;
       width: 100%;
@@ -43,17 +44,55 @@
   }
 }
 
+.tall_drawing,
+.svg-v2_g {
+  position: absolute;
+  // top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
 .tall_drawing {
-  animation: slideFromRight 2s ease-in-out forwards;
+  left: 0%;
 }
 
 .svg-v2_g {
-  position: absolute;
-  height: 100%;
+  right: 0%;
+  // position: absolute;
+  // height: 100%;
   display: block;
   height: 50rem;
   width: auto;
   bottom: 65rem;
   z-index: -1;
-  animation: slideFromLeft 2s ease-in-out forwards;
+}
+
+.animate-left {
+  animation: slideFromLeft 3s ease forwards;
+}
+
+.animate-right {
+  animation: slideFromRight 3s ease forwards;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  100% {
+    left: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    right: 0;
+    opacity: 0;
+  }
+  100% {
+    right: 100%;
+    opacity: 1;
+  }
 }

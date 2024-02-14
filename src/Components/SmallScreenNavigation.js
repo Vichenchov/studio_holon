@@ -35,7 +35,7 @@ const SmallScreenNavigation = () => {
             >
               <li>פרטי השיעורים</li>
             </a>
-            <a href="#">
+            <a href="#" onClick={(e) => handleAnchorClick(e, "contact")}>
               <li>צור קשר</li>
             </a>
           </ul>

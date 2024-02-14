@@ -1,3 +1,23 @@
-.footer{
-    height: 10rem;
+.footer {
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: medium;
+
+  a {
+    margin: 3rem;
+  }
+
+  &_links,
+  &_copywrite {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+[name='copyright']{
+    margin-left: 2rem;
+    margin-top: 0.3rem;
 }

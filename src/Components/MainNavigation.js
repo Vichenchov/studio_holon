@@ -63,7 +63,11 @@ const MainNavigation = () => {
               </a>
             </li>
             <li>
-              <a href="contact" className="navigation_a">
+              <a
+                href="contact"
+                onClick={(e) => handleAnchorClick(e, "contact")}
+                className="navigation_a"
+              >
                 צור קשר
               </a>
             </li>

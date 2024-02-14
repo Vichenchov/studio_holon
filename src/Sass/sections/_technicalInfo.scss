@@ -1,12 +1,5 @@
 .info_main_container {
-  // height: $sectionHight;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center; /* Horizontal center alignment */
-  // height: 60vh;
-  // margin: 10rem 0 10rem;
   margin-top: 10rem;
-  // background-color: $color-primary-clear;
   padding: 5rem 1rem;
 }
 
@@ -21,16 +14,14 @@
 .info_container {
   position: relative;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-around;
   text-align: right;
   margin-right: 4rem;
-  // display: block;
 
   &--1,
   &--2,
   &--3 {
-    // flex-wrap: wrap;
     position: relative;
     padding: 3rem;
     margin-left: 4rem;

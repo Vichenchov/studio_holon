@@ -8,3 +8,15 @@ span,
 p {
   letter-spacing: 0.4rem;
 }
+
+h1,
+h2,
+h3 {
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+}
+
+.heading-primary {
+  &--sub {
+    font-family: $fontStyle;
+  }
+}

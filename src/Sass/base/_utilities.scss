@@ -73,19 +73,19 @@
     margin-top: 0;
   }
   .secondSec_container--img img {
-    margin-top: 5rem;
+    margin-top: 0rem;
     height: 55rem;
   }
-  .contact{
-    
-      &_phone,&_whatsapp{
-        margin: 3rem;
-        display: flex;
-        flex-direction: column-reverse;
-        p{
-          margin-bottom: 2rem;
-        }
+  .contact {
+    &_phone,
+    &_whatsapp {
+      margin: 3rem;
+      display: flex;
+      flex-direction: column-reverse;
+      p {
+        margin-bottom: 2rem;
       }
+    }
   }
 }
 
@@ -99,16 +99,26 @@
   .hero_svgs {
     width: 100%;
   }
-  .secondSec_container--img img {
-    height: 65rem;
+  .secondSec_container--img {
+    overflow: visible;
+    img {
+      height: 60rem;
+    }
   }
   .info_main_container {
     margin-top: 70rem;
   }
-  .contact{
-    p:first-child{
+  .contact {
+    p:first-child {
       width: 100%;
       font-size: 2rem;
+    }
+  }
+  .footer {
+    font-size: x-small;
+
+    a {
+      margin: 2rem;
     }
   }
 }
@@ -116,5 +126,11 @@
 @media (max-width: 400px) {
   .info_main_container {
     margin-top: 105rem;
+  }
+
+  .contact_btn {
+    box-icon {
+      margin-top: 1rem;
+    }
   }
 }

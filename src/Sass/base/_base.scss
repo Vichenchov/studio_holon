@@ -17,10 +17,9 @@ html {
 body {
   box-sizing: border-box;
   margin: 0;
-  font-family: Arimo, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: $fontStyle;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  direction: rtl;
 }

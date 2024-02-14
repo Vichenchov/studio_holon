@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   padding: $section-padding;
 }
 
@@ -17,13 +17,13 @@ header {
 }
 
 .heading-primary {
-  margin-top: 12.5rem;
+  margin-top: 10rem;
 
   &--main {
     display: block;
     font-size: $mainTitle-fontSize;
     font-weight: 700;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
   }
 
   &--sub {
@@ -59,3 +59,11 @@ header {
   animation: slideFromLeft 2s ease-in-out forwards;
 }
 
+.decorated_text{
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration-thickness: 6px;
+  text-decoration-color: $color-secondery-clear;
+  text-decoration-skip-ink: none;
+}
