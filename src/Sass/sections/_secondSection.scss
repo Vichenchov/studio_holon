@@ -33,7 +33,7 @@
     width: 60%;
     animation: slideImages 2s ease-in-out forwards;
     overflow: hidden;
-    
+
     img {
       position: relative;
       width: 100%;
@@ -47,24 +47,22 @@
 .tall_drawing,
 .svg-v2_g {
   position: absolute;
-  // top: 50%;
   transform: translateY(-50%);
   opacity: 0;
 }
 
 .tall_drawing {
   left: 0%;
+  z-index: 2;
 }
 
 .svg-v2_g {
   right: 0%;
-  // position: absolute;
-  // height: 100%;
   display: block;
   height: 50rem;
   width: auto;
   bottom: 65rem;
-  z-index: -1;
+  z-index: 1;
 }
 
 .animate-left {

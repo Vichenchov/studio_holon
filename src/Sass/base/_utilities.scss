@@ -101,6 +101,7 @@
   }
   .secondSec_container--img {
     overflow: visible;
+
     img {
       height: 60rem;
     }
@@ -109,6 +110,9 @@
     margin-top: 70rem;
   }
   .contact {
+    h2 {
+      text-align: center;
+    }
     p:first-child {
       width: 100%;
       font-size: 2rem;

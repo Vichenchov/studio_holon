@@ -1,6 +1,7 @@
 .info_main_container {
   margin-top: 10rem;
   padding: 5rem 1rem;
+  background-color: $sections-bg-color;
 }
 
 .info_title {
@@ -28,7 +29,7 @@
     margin-bottom: 4rem;
     width: 30%;
     background-color: $color-secondery-clear;
-    z-index: -1;
+    z-index: 1;
     border-radius: 25px;
 
     box-shadow: 0 0.5rem 1rem rgba($color-primary-clear, 0.4);
