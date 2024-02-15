@@ -17,7 +17,7 @@ const Contact = () => {
           <p className="italic">טלפון :</p>
         </div>
         <div className="contact_whatsapp">
-          <a href="#" className="btn contact_btn" onClick={handleClick}>
+          <a href="#" className="btn contact_btn" role="button" onClick={handleClick}>
             <box-icon
               name="whatsapp"
               type="logo"

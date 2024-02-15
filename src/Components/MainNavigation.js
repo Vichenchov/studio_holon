@@ -33,7 +33,7 @@ const MainNavigation = () => {
   return (
     <>
       {!isSmallScreen ? (
-        <div className="nav-container">
+        <nav role="navigation" className="nav-container">
           <ul>
             <li>
               <a
@@ -75,7 +75,7 @@ const MainNavigation = () => {
               <img className="logo" src={logo} alt="logo" />
             </li>
           </ul>
-        </div>
+        </nav>
       ) : (
         <SmallScreenNavigation />
       )}

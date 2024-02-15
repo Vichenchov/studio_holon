@@ -19,13 +19,13 @@ const Hero = () => {
             האמנות
           </span>
         </h1>
-        <a href="#contact" className="btn">
+        <a href="#contact" role="button" className="btn">
           להשארת פרטים
         </a>
       </header>
       <div className="hero_svgs">
-        <img className="svg-v1_o" src={v1_g} alt="SVG Image" />
-        <img className="svg-pencils" src={Svg1} alt="SVG Image" />
+        <img className="svg-v1_o" src={v1_g} alt="כתם בצבע כתום" />
+        <img className="svg-pencils" src={Svg1} alt="ילדים מציירים" />
       </div>
     </div>
   );

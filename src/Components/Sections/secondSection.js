@@ -59,12 +59,12 @@ const SecondSection = () => {
             animated ? "animate-right" : ""
           }`}
           src={tallDrawing}
-          alt="SVG Image"
+          alt="אישה מציירת על קאנבאס"
         />
         <img
           className={`svg-v2_g element-left ${animated ? "animate-left" : ""}`}
           src={v2_g}
-          alt="SVG Image"
+          alt="כתם בצע טורקיז"
         />
       </div>
     </div>
