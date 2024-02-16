@@ -13,7 +13,7 @@ const SmallScreenNavigation = () => {
 
   return (
     <>
-      <nav role="navigation">
+      <nav className="navigation" role="navigation">
         <img className="logo" src={logo} alt="logo" />
         <div id="menuToggle">
           <input type="checkbox" />
