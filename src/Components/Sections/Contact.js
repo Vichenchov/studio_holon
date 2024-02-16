@@ -21,7 +21,6 @@ const Contact = () => {
             <box-icon
               name="whatsapp"
               type="logo"
-              animation="flashing"
               color="#fff"
             ></box-icon>
             <label className="lbl">פתיחת צ'אט</label>
